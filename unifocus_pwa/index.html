@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniFocus</title>
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <h1>Benvenuto in UniFocus</h1>
+    <p>App per studenti di medicina. Questa è una versione demo base.</p>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js').then(function() {
+                console.log('Service Worker registrato');
+            });
+        }
+    </script>
+</body>
+</html>
